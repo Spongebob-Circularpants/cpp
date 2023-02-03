@@ -7,7 +7,7 @@ public:
     {
         code = c;
         qty = q;
-        price = p
+        price = p;
     }
     int getCode() const{ return code; }
     int getValue() const { return qty * price; }
