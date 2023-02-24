@@ -31,14 +31,16 @@ public:
     Triangle(){}
 };
 
-std::ostream& operator<<(std::ostream& ouput, Polygon& p)
+std::ostream& operator<<(std::ostream& output, Polygon& p)
 {
-    std::cout << "Area = " << p.area();
+    output << "Area = " << p.area();
+    return output;
 }
 
-std::istream& operator>>(std::istream& intput, Polygon& p)
+std::istream& operator>>(std::istream& input, Polygon& p)
 {
-    std::cin >> p.length >> p.heigth;
+    input >> p.length >> p.heigth;
+    return input;
 }
 
 int main()
